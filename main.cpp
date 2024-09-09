@@ -80,7 +80,7 @@ int main() {
     cout << "" << endl << endl;
     cout << "github  :  https://github.com/m4itmo/physics_1_dt_1" << endl;
     cout << "author  :  std46d6b <dev@m5k.ru>" << endl;
-    cout << "version :  0.1.0" << endl;
+    cout << "version :  0.1.1" << endl;
     cout << "" << endl << endl;
 
 
@@ -96,6 +96,10 @@ int main() {
     
     if (option == 1) {
         cout << "Cartesian coordinate system -> Spherical coordinate system" << endl;
+        cout << "r = \\sqrt{x^2 + y^2 + z^2}" << endl;
+        cout << "theta = arctg(\\sqrt{x^2 + y^2} / z)" << endl;
+        cout << "phi = arctg(y / x)" << endl;
+        cout << "" << endl;
         cout << "Enter x, y, z: ";
         cin >> a >> b >> c;
         
@@ -103,6 +107,10 @@ int main() {
         cout << cout_tuple(result, "r    ", "theta", "phi  ") << endl;
     } else if (option == 2) {
         cout << "Spherical coordinate system -> Cartesian coordinate system" << endl;
+        cout << "x = r * sin(theta) * cos(phi)" << endl;
+        cout << "y = r * sin(theta) * sin(phi)" << endl;
+        cout << "z = r * cos(theta)" << endl;
+        cout << "" << endl;
         cout << "Enter r, theta, phi: ";
         cin >> a >> b >> c;
 
